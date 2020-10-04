@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ja" >
+  <head>
+    <title>ダッシュボードテンプレート for Bootstrap · Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="dashboard.css" rel="stylesheet">
+    <link href="../example.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+      <div class="container">
+        <span class="skiplink-text">Skip to main content</span>
+      </div>
+    </a>
+
+    <nav class="navbar navbar-dark fixed-top bg-warning flex-md-nowrap p-0 shadow">
+      <!-- <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a> -->
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Todo Quest</a>
+      <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <a class="navbar-brand" href="#">メニュー</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                </button>
+         
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <div class="dropdown">
+                    
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                  <label class="btn btn-warning active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> ホーム画面
+                                  </label>
+                                  <label class="btn btn-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> タスク管理
+                                  </label>
+                                  <label class="btn btn-warning">
+                                    <input type="radio" name="options" id="option3" autocomplete="off"> 所属管理
+                                  </label>
+                                  <label class="btn btn-warning">
+                                    <input type="radio" name="options" id="option4" autocomplete="off"> プロジェクト管理
+                                  </label>
+                                  <label class="btn btn-warning">
+                                    <input type="radio" name="options" id="option5" autocomplete="off"> 設定
+                                  </label>
+                            </div>
+                            
+                        </div>
+        </nav>
+  
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+              <!-- <a class="nav-link" href="#">Sign out</a> -->
+                <a class="nav-link" href="#">サインアウト</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <ul class="list-group">
+                                <div class="alert alert-warning" role="alert">
+                                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                                    </div>
+                                </div>
+                            
+                        <li class="list-group-item">【ハンドルネーム】<br>テスト
+                        </li>
+                        <li class="list-group-item">【当日タスク】<br>０件
+                        </li>
+                            </ul>
+                        </li>
+          
+                    <ul class="list-group" style="max-width: 400px;">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">部屋の掃除
+                            <span class="badge badge-primary badge-pill">プロジェクト名<br>（所属名）</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">お買い物
+                            <span class="badge badge-primary badge-pill">プロジェクト名<br>（所属名）</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">お仕事
+                            <span class="badge badge-primary badge-pill">プロジェクト名<br>（所属名）</span>
+                        </li>
+                    </ul>
+                    
+                    <!--グーグルカレンダー-->
+                    <li class="nav-item">
+                        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;
+                            wkst=1&amp;
+                            bgcolor=%23ffffff&amp;
+                            ctz=Asia%2FTokyo&amp;
+                            src=ZG9uZ2FtYWlsMTEwNEBnbWFpbC5jb20&amp;
+                            src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;
+                            src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;
+                            color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043" 
+                            style="border:solid 1px #777" width="250" height="300" frameborder="0" scrolling="no">
+                        </iframe>
+                    </li>
+                    
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+       
+                    <h1 class="h2"></h1>
+                        <div class="btn-toolbar mb-2 mb-md-0">
+                            
+                            <div class="btn-group mr-2">
+                                <button type="button" class="btn btn-sm btn-outline-secondary"></button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary"></button>
+                            </div>
+                            
+                            <!--わからないが調整・・・-->
+                            <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                            <span data-feather="calendar"></span>
+                            </button>
+                        </div>
+                </div>
+
+                <!-- タスク一覧-->
+                <h2>タスク一覧</h2>
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                              <th>完了</th>
+                              <th>タスク</th>
+                              <th>期限</th>
+                            </tr>
+    　                  </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <div class = "form-check">
+                                        <input class = "form-check-input position-static " type = "checkbox">
+            　　                    </div>
+                                </th>
+                                <td>部屋の掃除</td>
+                                <td>9/9</td>
+                            </tr>
+                
+                            <tr>
+                                <th scope="row">
+                                    <div class = "form-check">
+                                        <input class = "form-check-input position-static " type = "checkbox">
+                                    </div>
+                                </th>
+                                <td>お買い物</td>
+                                <td>9/12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                <!-- タスク詳細 -->
+                <h2>タスク詳細</h2>
+                    <div class="alert alert-secondary" role="alert">
+                        <strong>タイトル</strong> 
+                            <br>タスクの詳細説明があります。
+                    </div>
+
+            </main>
+        </div>
+    </div>
+
+<!-- Icons -->
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+
+<!-- Graphs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+<script>
+  var ctx = document.getElementById("myChart");
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      datasets: [{
+        data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+        lineTension: 0,
+        backgroundColor: 'transparent',
+        borderColor: '#007bff',
+        borderWidth: 4,
+        pointBackgroundColor: '#007bff'
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: false
+          }
+        }]
+      },
+      legend: {
+        display: false,
+      }
+    }
+  });
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>
+  window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery-slim.min.js"><\/script>')
+</script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script><script src="/docs/4.5/assets/js/vendor/anchor.min.js"></script>
+<script src="/docs/4.5/assets/js/vendor/clipboard.min.js"></script>
+<script src="/docs/4.5/assets/js/vendor/bs-custom-file-input.min.js"></script>
+<script src="/docs/4.5/assets/js/src/application.js"></script>
+<script src="/docs/4.5/assets/js/src/search.js"></script>
+<script src="/docs/4.5/assets/js/src/ie-emulation-modes-warning.js"></script>
+  </body>
+</html>
